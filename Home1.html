@@ -1,54 +1,167 @@
 <!DOCTYPE html>
-<html class="w-90 container fluid">
+<html>
 <head>
 	<title>Home Page</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
     
     <link rel="stylesheet" type="text/css" href="style1.css">
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+      $(document).ready(function() {
+        $('.navbar-toggler').click(function() {
+          $('.navbar-collapse').toggleClass('show');
+        });
+      });
+    </script> 
 	
 </head>
 <body>
   <header>
-	<nav class="row" >
-		<div class="col-6">
-            <a href="Home1.html"><img id="f1" src="image 6.png" style="inline-size: 70px ;" alt="logo"></a>
+	<nav class="navbar navbar-expand-md">
+        <div class=" container-fluid">
+          <a class="navbar-brand" href="Home1.html"><img id="f1" src="image 6.png" style="inline-size: 70px ;"></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon" style="background-color: rgb(134, 219, 234);"></span>
+          </button>
+          <div class="collapse navbar-collapse mr" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="Home1.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="About1.html">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="Projects1.html">Projects</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="Contact1.html">Contact Us</a>
+              </li>
+            </ul>
+          </div>
         </div>
-        <div class="col-md-5 offset-1">
-            <div class="d-flex justify-content-end">
-                <ul>
-                    <li><a href="Home1.html">Home</a></li>
-                    <li><a href="About1.html">About Us</a></li>
-                    <li><a href="Projects1.html">Projects</a></li>
-                    <li><a href="Contact1.html">Contact Us</a></li>
-                </ul>
-            </div> 
-        </div>
-	</nav>
+      </nav>
 </header>
-<br><br><br>
-	<div class="row" style="height: 400px;">
+
+
+<main class="w-90 container-fluid">
+<div class="container-fluid" >
+	<div class="row"  style="height: 400px;">
 		<div class="col-6 justify-content-center" style="padding-left: 10%;">
-			<h1 class="up1" style="font-size: 100px; padding-top: 10%;">FinZ</h1>
+			<div class="a2" style=" padding-top: 10%;">FinZ</div>
 			
             <p>This is the space for paragraphThis is the space for paragraphThis is the space for paragraphThis is the space for paragraph</p>
             <br>
-            <div class="button-1" style="padding-left: 18%;">
-                <button id="b1" style="height: 40px; width: 140px; border-radius: 10px;" onclick="">Contact me</button>
+            <div class="button-1">
+                <a href="Contact1.html"><button id="b1" style="height: 35px; width: 45%; border-radius: 10px;" >Contact</button></a>
                 </div>
         </div>
 
         <div class="col-6 justify-content-end" style="padding-right: 1%;">
-            <img src="image 6.png" style="inline-size: 400px; box-shadow: 0px 0px 5px 10px #39295f;" alt="logo">hi
+            <img id="f1" class="img-fluid" src="h_img.png" style="inline-size: 450px; " alt="logo">
         </div>
-        </div><br>
+        </div>
+        </div>
+        <br>
         <div class="container" style="height: 300px;">
-    <div class="row text-center" style="position: relative; min-height: fit-content ;"><h1 class="up1 " style="font-size: 60px;" >What does FinZ do?</h1><br>
-        <br><p>parafaoigfsrfparafaoigfsrfparafaoigf<br>srfparafaoigfsrfparafaoigfsrf</p>
+    <div class="row text-center" style="position: relative; min-height: fit-content ;"><div class="a1 row-1 text-center" >What does FinZ do?</div><br>
+        <br><p>Finz provides Education to Youths<br>Learn how to invest and Groww</p>
     </div>
         </div>
-    <div class="container">
-        
-    </div>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="a1 row-1 text-center " style=" color:azure; ">Stats</div>
+                <div class="col-12 d-flex justify-content-evenly">
+                    <div class="col-lg-4 col-md-6 col-sm-12 d-flex align-items-center">
+                        <div class="card magic text-center"><p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vitae
+                            harum maxime veniam vel voluptates. Cupiditate doloremque nam officiis consequuntur totam sit
+                            quis, fugiat obcaecati aliquam autem dolor ad impedit! Saepe!
+                            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vitae harum maxime veniam vel
+                            voluptates. Cupiditate doloremque nam officiis consequuntur totam sit quis, fugiat obcaecati
+                            aliquam autem dolor ad impedit! Saepe!</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-6 col-sm-12 text-center fs-4">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem quaerat maxime similique
+                            deleniti laboriosam quos? Quisquam molestiae ea nihil hic doloremque voluptates. Assumenda
+                            accusamus nemo, ea odit porro sapiente perferendis.
+                            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vitae harum maxime veniam vel
+                            voluptates. Cupiditate doloremque nam officiis consequuntur totam sit quis, fugiat obcaecati
+                            aliquam autem dolor ad impedit! Saepe!
+                        </p>
+                    </div>
+                </div>
+                <div class="col-12 d-flex justify-content-evenly">
+                    <div class="col-lg-6 col-md-6 col-sm-12 text-center fs-4">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem quaerat maxime similique
+                            deleniti laboriosam quos? Quisquam molestiae ea nihil hic doloremque voluptates. Assumenda
+                            accusamus nemo, ea odit porro sapiente perferendis.
+                            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vitae harum maxime veniam vel
+                            voluptates. Cupiditate doloremque nam officiis consequuntur totam sit quis, fugiat obcaecati
+                            aliquam autem dolor ad impedit! Saepe!
+                        </p>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-12 d-flex align-items-center">
+                        <div class="card magic text-center"><p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vitae
+                            harum maxime veniam vel voluptates. Cupiditate doloremque nam officiis consequuntur totam sit
+                            quis, fugiat obcaecati aliquam autem dolor ad impedit! Saepe!
+                            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vitae harum maxime veniam vel
+                            voluptates. Cupiditate doloremque nam officiis consequuntur totam sit quis, fugiat obcaecati
+                            aliquam autem dolor ad impedit! Saepe!</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 d-flex justify-content-evenly">
+                    <div class="col-lg-4 col-md-6 col-sm-12 d-flex align-items-center">
+                        <div class="card magic text-center"><p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vitae
+                            harum maxime veniam vel voluptates. Cupiditate doloremque nam officiis consequuntur totam sit
+                            quis, fugiat obcaecati aliquam autem dolor ad impedit! Saepe!
+                            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vitae harum maxime veniam vel
+                            voluptates. Cupiditate doloremque nam officiis consequuntur totam sit quis, fugiat obcaecati
+                            aliquam autem dolor ad impedit! Saepe!</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-6 col-sm-12 text-center fs-4">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem quaerat maxime similique
+                            deleniti laboriosam quos? Quisquam molestiae ea nihil hic doloremque voluptates. Assumenda
+                            accusamus nemo, ea odit porro sapiente perferendis.
+                            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vitae harum maxime veniam vel
+                            voluptates. Cupiditate doloremque nam officiis consequuntur totam sit quis, fugiat obcaecati
+                            aliquam autem dolor ad impedit! Saepe!
+                        </p>
+                    </div>
+                </div>
+                <div class="col-12 d-flex justify-content-evenly">
+                    <div class="col-lg-6 col-md-6 col-sm-12 text-center fs-4">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem quaerat maxime similique
+                            deleniti laboriosam quos? Quisquam molestiae ea nihil hic doloremque voluptates. Assumenda
+                            accusamus nemo, ea odit porro sapiente perferendis.
+                            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vitae harum maxime veniam vel
+                            voluptates. Cupiditate doloremque nam officiis consequuntur totam sit quis, fugiat obcaecati
+                            aliquam autem dolor ad impedit! Saepe!
+                        </p>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-12 d-flex align-items-center">
+                        <div class="card magic text-center"><p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vitae
+                            harum maxime veniam vel voluptates. Cupiditate doloremque nam officiis consequuntur totam sit
+                            quis, fugiat obcaecati aliquam autem dolor ad impedit! Saepe!
+                            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vitae harum maxime veniam vel
+                            voluptates. Cupiditate doloremque nam officiis consequuntur totam sit quis, fugiat obcaecati
+                            aliquam autem dolor ad impedit! Saepe!</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        </main>
+        <footer class="text-center container-fluid" style="color: white; padding: 1% 5%; background-color: #1d1d1d;"><div style="margin-bottom: 15px;">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+            Impedit ducimus beatae consectetur voluptatibus nam nihil voluptates natus ea possimus doloremque. 
+            Sapiente odio quo mollitia, et iure voluptatum excepturi quam maiores.</div></footer>	
+            
 	</body>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-x8ywpJpSMT5S5v/G29W0GKZJ3qX4YcNy5EzjW8lD5th5XM5ie5FjqVmG+5Kjvgm3" crossorigin="anonymous"></script>
 </html>
