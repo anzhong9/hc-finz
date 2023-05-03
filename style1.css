@@ -11,9 +11,29 @@ html{
   width: 90%;
 }
  
+::-webkit-scrollbar {
+  width: 11px;
+}
+
+::-webkit-scrollbar-track {
+  background: rgb(34, 30, 56);
+}
+::-webkit-scrollbar-thumb {
+  background-image: linear-gradient(to bottom, rgb(23, 160, 128), rgb(24, 81, 186), rgb(124, 56, 233), rgb(144, 69, 198), rgb(171, 72, 161));
+  border-radius: 1rem;
+  
+  
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-image: linear-gradient(to bottom, rgb(8, 137, 107), rgb(13, 62, 155), rgb(78, 22, 168), rgb(103, 21, 161), rgb(154, 27, 141));
+}
+.im1{
+  width:"100%";
+}
  
  #f1:hover{
-  filter: drop-shadow(0 0 0.3rem rgb(79, 29, 179));
+  filter: drop-shadow(0 0 0.3rem rgb(99, 10, 158));
 
  }
  .bi{
@@ -26,39 +46,66 @@ html{
  }
  #b3:hover{
   cursor: pointer;
-  filter: drop-shadow(0 0 1rem rgb(225, 22, 117));
+  filter: drop-shadow(0 0.1vw 0.8rem rgb(232, 52, 136));
   
  }
- #b1{
-  transition: transform 250ms;
- }
+ 
   #b1:hover{
-    filter: drop-shadow(0 0 0.3rem rgb(213, 231, 77));
-    transform: translateY(-5px);
+    transition: 200ms;
+    background-color: rgb(181, 226, 237);
+    filter: drop-shadow(0 0 0.3rem rgb(61, 85, 216));
+   
   }
   .a1{
     background-color: #000000;
     color: #fff;
     font-size: 70px;
+   
   }
 
   .a2{
     color: #fff;
     font-size: 95px;
   }
+  .ce2{
+    justify-content: center;
+    text-justify: inter-cluster;
+    margin-bottom: 1px;
+    font-size: x-large;
+  }
   p{
-    font-size: 20px;
+    font-size: 15px;
     color: #fff;
   }
   body {
     background-color:#000000;
+      margin: 0;
+      padding: 0;
+    
+    font-family: georgia, cambria ,sans-serif;
+  }
   
-    margin: 0;
-    padding: 0;
-    font-family: segoe ui, Arial, sans-serif;
+
+   /* .glass-morph-nav { 
+    background-color: rgba(255, 255, 255, 0.15);
+    width: 87%;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
+    overflow: hidden;
+    border-right: 1vw;
+    position: fixed;
+    
+  }  */
+  
+  .navbar-collapse {
+    height: 200px;
   }
 
+  
   .navbar-nav {
+  
     margin-left: auto;
   }
 
@@ -67,10 +114,10 @@ html{
   }
 
   .nav-link[aria-current="page"] {
-    color: yellow !important;
+    color: rgb(42, 234, 182) !important;
   }
   .nav-link:hover {
-    color: rgb(43, 43, 209);
+    color: rgb(121, 35, 218);
   }
    
  
@@ -83,22 +130,38 @@ html{
    .a2 {
       font-size: 8vw ;
    }
+   
   main{
     font-size:2vw; 
   }
    }
 
+   .navbar-collapse.show + * {
+    margin-top: 20px; /* or any value you want */
+    
+  }
 
 @media only screen and (max-width: 900px) {
    p{
     font-size: 2vw;
   }
+  .ce2{
+    font-size: 2vw;
+    
+   }
    }
 @media only screen and (max-width: 600px) {
 
   body { 
      font-size:2vw; 
   }
+  .im1{
+    width:60%;
+  }
+  .ce2{
+    font-weight: normal;
+    
+   }
   
 }
 
@@ -108,11 +171,13 @@ html{
     color: #fff;
     padding:10px;
   }
-  
+  footer{
+    margin-bottom: 0;
+    position: absolute;
+  }
   nav {
     height: 60px;
-    
-    
+     
   }
  
   nav ul {
@@ -134,9 +199,14 @@ html{
   }
   
   nav li a:hover {
-    color: #0f6aaa;
+    color: #126eb0;
   }
-  
+  .navbar-toggler-icon{  
+
+  background-color: rgb(181, 201, 205);
+
+  }
+
   :root
   {
       --background-color: #1E1E1E;
@@ -185,13 +255,13 @@ html{
   .glow{
     background-color: #191919;
     color: white;
-    transition: 0.8s;
+    transition: 0.6s;
 }
 
 .glow:hover{
 
-    border: 10px solid ;
-    border-image-source:linear-gradient(45deg,rgb(104, 210, 170),rgb(241, 247, 79),rgb(38, 38, 25)) ;
+    border: 1.1vw solid ;
+    border-image-source:linear-gradient(45deg,rgb(104, 192, 210),rgb(96, 96, 255),rgb(113, 0, 114)) ;
     border-image-slice: 1;
 }
 
@@ -223,6 +293,6 @@ html{
 
 .magic:hover > p
 {
-    transition: opacity 1s;
+    transition: opacity 1.5s;
     opacity: 1;
 }
