@@ -9,9 +9,9 @@ html{
 
 .w-90{
   width: 90%;
-  margin-top: 74px;
+  margin-top: 80px;
 }
- 
+
 ::-webkit-scrollbar {
   width: 11px;
 }
@@ -51,6 +51,11 @@ html{
   filter: drop-shadow(0 0.1vw 0.5vw rgb(232, 52, 136));
   
  }
+ #b1{
+  width: 35%;
+  height: 20%;
+  border-radius: 15px;
+ }
  
   #b1:hover{
     transition: 200ms;
@@ -75,6 +80,9 @@ html{
     margin-bottom: 1px;
     font-size: x-large;
   }
+.image2{
+  display:inline-block; width: 90%; height: 80%;
+   overflow: hidden; padding-left:10%; padding-bottom: 3%;}
   p{
     font-size: 15px;
     color: #fff;
@@ -90,11 +98,10 @@ html{
 
    .glass-morph-nav { 
     background-color: rgba(255, 255, 255, 0.15);
-    width: 87%;
+    width: 100%;
    
     backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(10px);
-    border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
     overflow: hidden;
     border-right: 1vw;
@@ -120,7 +127,8 @@ html{
     color: rgb(42, 234, 182) !important;
   }
   .nav-link:hover {
-    color: rgb(121, 35, 218);
+    color:#126eb0;
+    border-bottom: 1px solid #fff;
   }
    
  
@@ -170,9 +178,36 @@ html{
 @media only screen and (max-width: 440px) {
 
   
+  .navbar{
+    font-size: 12px;
+  }
+  
   .aboutSection{
     width : 100%;
-
+  }
+  #b1{
+    width: 45%;
+    height: 30px;
+    border-radius: 8px;
+  }
+  .w-90{
+    margin-top: 100px;
+    font-size: 12px;
+  }
+  .w-91{
+    margin-top: 300px;
+  }
+  p{
+    font-size: 12px;
+  }
+  footer{
+    font-size: 12px;
+  }
+  .ce2{
+    font-size: 9px;
+  }
+  .image2{
+    display:inline-block; width: 99%; height: 90%;
   }
 }
 
@@ -289,14 +324,7 @@ html{
 }
 
 
-.foot{
-    display: flex;
-    justify-content: center;
-    height: 60px;
-    width: 100%;
-    background-color: #191919;
 
-}
 
 .magic p{
     opacity: 0;
